@@ -164,59 +164,6 @@ h2 {
 
 .hero-visual { position: absolute; inset: 0; pointer-events: none; }
 
-.house {
-  position: absolute;
-  top: 0;
-  right: 165px;
-  width: 405px;
-  height: 250px;
-  background:
-    linear-gradient(145deg, transparent 0 16%, #30312f 16% 24%, transparent 24%) 0 0/100% 42%,
-    linear-gradient(90deg, #e6dfd1 0 33%, #cbbfae 33% 35%, #f3eee4 35% 68%, #cbbfae 68% 70%, #e6dfd1 70%) bottom/100% 76% no-repeat;
-  clip-path: polygon(18% 0, 92% 0, 100% 86%, 0 100%, 0 25%);
-  opacity: .95;
-  filter: drop-shadow(0 5px 6px rgba(0,0,0,.25));
-}
-
-.house::before {
-  position: absolute;
-  inset: 43px 15px auto 0;
-  height: 38px;
-  content: "";
-  background: #232425;
-  transform: skewY(-18deg);
-}
-
-.couple {
-  position: absolute;
-  right: 20px;
-  top: 42px;
-  display: flex;
-  align-items: end;
-  gap: 5px;
-}
-
-.couple span {
-  position: relative;
-  display: block;
-  width: 116px;
-  height: 265px;
-  border-radius: 55px 55px 14px 14px;
-  background:
-    radial-gradient(circle at 50% 22%, #f2c59f 0 18%, transparent 18.5%),
-    radial-gradient(circle at 52% 12%, #3c2416 0 19%, transparent 19.5%),
-    linear-gradient(#fff3e7 34%, #f3e6d4 34% 100%);
-  filter: drop-shadow(0 2px 2px rgba(0,0,0,.25));
-}
-
-.couple span + span {
-  width: 126px;
-  height: 300px;
-  background:
-    radial-gradient(circle at 50% 20%, #e8b98c 0 17%, transparent 17.5%),
-    radial-gradient(circle at 52% 10%, #2b211d 0 17%, transparent 17.5%),
-    linear-gradient(#87939d 32%, #687882 32% 100%);
-}
 
 .termite-photo {
   position: relative;
@@ -237,23 +184,6 @@ h2 {
   border-radius: 50%;
 }
 
-.termite-photo i,
-.wood-card.termites span::before,
-.wood-card.termites span::after {
-  position: absolute;
-  width: 34px;
-  height: 13px;
-  content: "";
-  background: #d3b06d;
-  border-radius: 50%;
-  box-shadow: 19px 0 0 -3px #d3b06d, -14px 0 0 -6px #d3b06d;
-}
-
-.termite-photo i:nth-child(1){ left: 35px; top: 70px; transform: rotate(23deg); }
-.termite-photo i:nth-child(2){ left: 115px; top: 114px; transform: rotate(-18deg); }
-.termite-photo i:nth-child(3){ left: 55px; top: 155px; transform: rotate(8deg); }
-.termite-photo i:nth-child(4){ left: 175px; top: 78px; transform: rotate(25deg); }
-.termite-photo i:nth-child(5){ left: 164px; top: 165px; transform: rotate(-28deg); }
 
 .merits {
   position: absolute;
@@ -396,16 +326,6 @@ h2 {
   text-align: center;
 }
 
-.wood-card span {
-  display: block;
-  min-height: 130px;
-  background: repeating-linear-gradient(18deg, #7c4c27 0 17px, #a76f3b 18px 31px, #6d411f 32px 41px);
-}
-.wood-card.pillar span { background: repeating-linear-gradient(90deg, #d3a371 0 17px, #88502a 18px 23px, #e7c398 24px 38px); }
-.wood-card.chips span { background: radial-gradient(circle at 44% 50%, #73411c 0 9%, transparent 10%), repeating-linear-gradient(90deg, #dcb788 0 14px, #a9703e 15px 22px, #f2d7ac 23px 33px); }
-.wood-card.termites span { position: relative; background: repeating-linear-gradient(38deg, #7d552d 0 18px, #4f321a 19px 27px, #aa753f 28px 37px); }
-.wood-card.termites span::before { left: 25px; top: 35px; }
-.wood-card.termites span::after { right: 28px; top: 82px; transform: rotate(28deg); }
 .wood-card figcaption { padding: 7px 3px; color: #6b3c1d; font-size: .83rem; }
 
 .red-message { color: var(--red); font-size: clamp(1.05rem, 3.1vw, 1.5rem); line-height: 1.28; }
@@ -430,30 +350,6 @@ thead th:first-child { background: #896b43; }
 thead th:last-child { background: #5d3a1d; }
 tbody th { background: #fbf0d7; }
 
-.inspector,
-.consult,
-.closing-photo {
-  min-height: 225px;
-  overflow: hidden;
-  border-radius: 8px;
-  border: 1px solid #ddb878;
-  background:
-    radial-gradient(circle at 64% 27%, #f0c198 0 9%, transparent 9.5%),
-    radial-gradient(circle at 65% 19%, #222 0 10%, transparent 10.5%),
-    linear-gradient(105deg, transparent 0 44%, #eef3ef 44% 70%, transparent 70%),
-    repeating-linear-gradient(90deg, #3b271b 0 18px, #6b4931 19px 34px),
-    #d7c0a1;
-  box-shadow: inset 0 0 34px rgba(0,0,0,.22);
-}
-
-.consult {
-  background:
-    radial-gradient(circle at 33% 31%, #f2c49c 0 9%, transparent 9.5%),
-    radial-gradient(circle at 34% 22%, #5b2f1a 0 10%, transparent 10.5%),
-    radial-gradient(circle at 68% 28%, #efc196 0 8%, transparent 8.5%),
-    radial-gradient(circle at 68% 20%, #242424 0 9%, transparent 9.5%),
-    linear-gradient(90deg, #efdfcc 0 48%, #f7faf7 48% 100%);
-}
 
 .compact { grid-template-columns: 1fr; }
 .stats-grid strong { display: block; color: var(--red); font-size: 1.9rem; }
@@ -520,9 +416,6 @@ tbody th { background: #fbf0d7; }
 @media (max-width: 900px) {
   .hero { padding-bottom: 350px; }
   .hero-copy { max-width: 100%; padding-left: 50px; }
-  .house { right: auto; left: 42%; width: 330px; opacity: .42; }
-  .couple { right: 12px; top: 190px; transform: scale(.82); transform-origin: top right; }
-  .termite-photo.large { right: auto; left: 12px; top: 340px; width: 210px; height: 190px; }
   .merits { left: 10px; right: 10px; bottom: 165px; grid-template-columns: repeat(5, 1fr); }
   .hero-cta { left: 10px; right: 10px; bottom: 20px; width: auto; }
 }
@@ -536,9 +429,6 @@ tbody th { background: #fbf0d7; }
   .hero-copy { padding-left: 44px; }
   .hero h1 { font-size: clamp(1.92rem, 9vw, 2.65rem); }
   .hero-checks { grid-template-columns: 1fr; gap: 5px; }
-  .house { left: 30%; top: 82px; width: 290px; }
-  .couple { top: 250px; transform: scale(.62); }
-  .termite-photo.large { top: 430px; width: 175px; height: 160px; }
   .merits { bottom: 150px; grid-template-columns: repeat(5, 1fr); gap: 4px; }
   .merits article { min-height: 82px; padding: 5px 2px; }
   .merits b { font-size: 1.35rem; }
@@ -551,7 +441,7 @@ tbody th { background: #fbf0d7; }
   .avatar { width: 68px; height: 78px; }
 }
 
-/* Real photo integration: replace the previous CSS-only placeholders with stock images. */
+/* Real photo integration. */
 img {
   display: block;
   max-width: 100%;
@@ -618,11 +508,6 @@ img {
 .wood-card.chips img { object-position: 50% 58%; }
 .wood-card.termites img { object-position: center; }
 
-.wood-card span,
-.wood-card.termites span::before,
-.wood-card.termites span::after {
-  display: none;
-}
 
 .photo-card {
   min-height: 225px;
