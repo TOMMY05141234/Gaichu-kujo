@@ -1040,3 +1040,161 @@ h2,
 .work-gallery .photo-card img {
   height: 180px;
 }
+
+/* Requested final adjustments. */
+.hero-house,
+.hero .termite-photo.large {
+  display: none;
+}
+
+.hero {
+  min-height: 560px;
+  background:
+    linear-gradient(90deg, #fffaf0 0 62%, rgba(255, 250, 240, 0.74) 72%, rgba(255, 250, 240, 0.18) 100%),
+    linear-gradient(#d9edf9, #fff6df);
+}
+
+.hero-copy {
+  max-width: min(650px, 64%);
+  margin-top: 20px;
+}
+
+.hero-couple {
+  top: 48px;
+  right: 28px;
+  width: 390px;
+  height: 430px;
+  opacity: 0.72;
+}
+
+.cta-button,
+.narrow {
+  width: min(100%, 520px);
+  min-height: 66px;
+}
+
+.hero-cta .cta-button,
+.closing .cta-button {
+  width: 100%;
+}
+
+.damage-gallery-two {
+  grid-template-columns: 1fr;
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+.damage-gallery-two .wood-card img {
+  min-height: 210px;
+  aspect-ratio: 1.35 / 1;
+}
+
+.treatment-compare {
+  background: linear-gradient(135deg, #fffdf8, #fff1d2);
+}
+
+.treatment-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.treatment-grid article {
+  padding: 14px;
+  background: #fff;
+  border: 1px solid #e5c286;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(78, 42, 13, 0.08);
+}
+
+.treatment-grid h3 {
+  margin-bottom: 8px;
+  color: #4a2b15;
+  font-size: 1.12rem;
+}
+
+.treatment-grid p {
+  margin: 0;
+  color: #4d392b;
+  font-size: .92rem;
+}
+
+.treatment-grid .recommended {
+  border: 2px solid #f08b23;
+  background: #fffaf0;
+}
+
+.treatment-grid .recommended h3::after {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 8px;
+  color: #fff;
+  font-size: .78rem;
+  content: "推奨";
+  background: #d64b12;
+  border-radius: 999px;
+}
+
+.avatar,
+.avatar.female,
+.avatar.couple-icon {
+  overflow: hidden;
+  background: #fff8ec;
+}
+
+.avatar::before,
+.avatar.female::before,
+.avatar.couple-icon::before {
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin-top: 5px;
+  background: #8a6248;
+  border-radius: 50%;
+}
+
+.avatar::after,
+.avatar.female::after,
+.avatar.couple-icon::after {
+  position: absolute;
+  bottom: 8px;
+  width: 48px;
+  height: 28px;
+  content: "";
+  background: #8a6248;
+  border-radius: 50% 50% 12px 12px;
+}
+
+@media (min-width: 560px) {
+  .damage-gallery-two,
+  .treatment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 675px;
+  }
+
+  .hero-copy {
+    max-width: min(100%, 640px);
+  }
+
+  .hero-couple {
+    top: 285px;
+    right: 0;
+    width: 250px;
+    height: 260px;
+    opacity: .16;
+  }
+}
+
+@media (max-width: 559px) {
+  .hero {
+    min-height: 740px;
+  }
+
+  .damage-gallery-two .wood-card img {
+    min-height: 170px;
+  }
+}
