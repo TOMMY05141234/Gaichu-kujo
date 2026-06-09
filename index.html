@@ -8,6 +8,26 @@
       content="シロアリ被害の早期発見と無料調査を案内するレスポンシブLP。"
     />
     <title>シロアリ被害の無料調査LP</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18146496318"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18146496318');
+    </script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') { window.location = url; }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18146496318/iVstCNOmp6scEL6e9sxD',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -34,16 +54,13 @@
           <div class="couple"><span></span><span></span></div>
           <div class="termite-photo large"><i></i><i></i><i></i><i></i><i></i></div>
         </div>
-        <div class="merits" aria-label="サービスの特徴">
-          <article><b>⌂</b><span>現地調査<br /><em>無料</em></span></article>
-          <article><b>▤</b><span>見積もり<br /><em>無料</em></span></article>
-          <article><b>🚫</b><span>しつこい営業<br /><em>なし</em></span></article>
-          <article><b>◷</b><span>最短即日<br /><em>対応</em></span></article>
-          <article><b>📍</b><span>全国対応</span></article>
-        </div>
         <div class="hero-cta">
-          <a class="cta-button" href="#contact">シロアリかどうか無料で確認する</a>
+          <a class="cta-button" href="#contact" onclick="gtag('event','click',{event_category:'cta',event_label:'hero'}); gtag_report_conversion();">シロアリかどうか無料で確認する</a>
           <small>調査だけでもOK。見積もり後のキャンセルも可能です。</small>
+          <div style="margin-top:16px; text-align:center;">
+            <!-- A8アフィリエイトバナー（差し替えてください） -->
+            <!-- <a href="https://px.a8.net/svt/ejp?a8mat=XXXXXX" rel="nofollow"><img border="0" width="300" height="250" alt="" src="https://www.a8.net/..."></a><img border="0" width="1" height="1" src="https://www.a8.net/0.gif?a8mat=XXXXXX" alt=""> -->
+          </div>
         </div>
       </section>
 
@@ -88,7 +105,7 @@
             <figure class="wood-card termites"><span></span><figcaption>羽アリの発生</figcaption></figure>
           </div>
         </div>
-        <a class="cta-button narrow" href="#contact">被害が広がる前に無料調査する</a>
+        <a class="cta-button narrow" href="#contact" onclick="gtag('event','click',{event_category:'cta',event_label:'damage'}); gtag_report_conversion();">被害が広がる前に無料調査する</a>
       </section>
 
       <section class="panel facts" aria-labelledby="facts-title">
@@ -121,7 +138,7 @@
           <div class="inspector" aria-hidden="true"></div>
         </div>
         <p class="hint">無料調査は、契約するためではなく、後悔しない判断をするための第一歩です。</p>
-        <a class="cta-button narrow" href="#contact">調査だけでも無料で相談する</a>
+        <a class="cta-button narrow" href="#contact" onclick="gtag('event','click',{event_category:'cta',event_label:'compare'}); gtag_report_conversion();">調査だけでも無料で相談する</a>
       </section>
 
       <section class="panel points" aria-labelledby="points-title">
@@ -185,7 +202,9 @@
             <li>調査だけでもOKです。</li>
             <li>見積もりを確認してから判断できます。</li>
           </ul>
-          <a class="cta-button" href="mailto:contact@example.com">今すぐ無料調査を依頼する</a>
+          <!-- A8アフィリエイトバナー（差し替えてください） -->
+          <!-- <a href="https://px.a8.net/svt/ejp?a8mat=XXXXXX" rel="nofollow"><img border="0" width="300" height="250" alt="" src="https://www.a8.net/..."></a><img border="0" width="1" height="1" src="https://www.a8.net/0.gif?a8mat=XXXXXX" alt=""> -->
+          <a class="cta-button" href="mailto:contact@example.com" onclick="gtag('event','click',{event_category:'cta',event_label:'closing'}); gtag_report_conversion();">今すぐ無料調査を依頼する</a>
         </div>
         <div class="closing-photo" aria-hidden="true"></div>
       </section>
