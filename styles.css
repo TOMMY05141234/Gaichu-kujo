@@ -1385,6 +1385,60 @@ h2,
   object-position: center;
 }
 
+/* 施工ステップ */
+.work-steps {
+  list-style: none;
+  margin: 14px 0 18px;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.work-steps li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid #e5c286;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(78, 42, 13, 0.08);
+}
+
+.step-num {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  background: #d64b12;
+  border-radius: 50%;
+}
+
+.work-steps strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #29170e;
+  font-size: 1rem;
+}
+
+.work-steps p {
+  margin: 0;
+  color: #4d392b;
+  font-size: .88rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+@media (min-width: 760px) {
+  .work-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* お客様の声 SVGピクトグラム */
 .avatar-svg {
   display: block;
