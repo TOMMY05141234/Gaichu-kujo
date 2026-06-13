@@ -1439,6 +1439,53 @@ h2,
   }
 }
 
+/* 星取表 */
+.star-table { border-radius: 10px; }
+.star-table thead th:first-child { background: #5a3518; }
+.star-table thead th:nth-child(2) { background: #c95118; }
+.star-table thead th:last-child { background: #6b6b6b; }
+.star-table td { background: #fff; }
+.star-table td:nth-child(2) { background: rgba(255, 238, 210, 0.55); }
+.s3 { color: #e07a00; font-size: 1.15rem; letter-spacing: 2px; }
+.s2 { color: #b09840; font-size: 1.15rem; letter-spacing: 2px; }
+.s1 { color: #bbb; font-size: 1.15rem; letter-spacing: 2px; }
+
+/* 施工ギャラリー 4列対応 */
+@media (min-width: 560px) {
+  .work-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 760px) {
+  .work-gallery { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ヒーロー写真 — モバイルで写真を先頭表示・デスクトップ写真列を拡張 */
+@media (max-width: 759px) {
+  .hero-inner {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .hero-photo {
+    order: -1 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .hero-photo img {
+    aspect-ratio: 4 / 3 !important;
+    object-position: 55% 30% !important;
+  }
+  .hero-copy {
+    background: rgba(255, 250, 238, 0.97) !important;
+    border-top: 2px solid rgba(237, 200, 129, 0.7) !important;
+  }
+}
+@media (min-width: 760px) {
+  .hero-inner {
+    grid-template-columns: 1fr 420px !important;
+  }
+}
+
 /* お客様の声 SVGピクトグラム */
 .avatar-svg {
   display: block;
