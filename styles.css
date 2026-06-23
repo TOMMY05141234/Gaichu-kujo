@@ -1450,6 +1450,33 @@ h2,
 .s2 { color: #b09840; font-size: 1.15rem; letter-spacing: 2px; }
 .s1 { color: #bbb; font-size: 1.15rem; letter-spacing: 2px; }
 
+/* 費用相場セクション */
+.cost-table-wrap { overflow-x: auto; margin: 14px 0 6px; }
+.cost-table { border-radius: 10px; }
+.cost-table thead th { background: #5a3518; color: #fff; padding: 12px 8px; font-size: clamp(.82rem, 2.2vw, 1.02rem); }
+.cost-table thead th.price-col { background: #d94209; }
+.cost-table th, .cost-table td { padding: 12px 8px; border-bottom: 1px solid #f0dcae; }
+.cost-table tbody th { background: #fff5dd; color: #5a3518; font-size: 1.05rem; }
+.cost-table td { background: #fff; color: var(--dark); }
+.cost-table td.price-col { color: var(--orange-dark); font-size: clamp(.9rem, 2.4vw, 1.12rem); }
+.cost-table tr.highlight-row th { background: #ffe9c2; }
+.cost-table tr.highlight-row td.price-col { background: rgba(240, 90, 22, 0.08); font-weight: 800; }
+
+.cost-callouts { display: grid; gap: 12px; margin: 16px 0 4px; }
+@media (min-width: 620px) { .cost-callouts { grid-template-columns: 1fr 1fr; } }
+.cost-callouts article {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: #fff; border: 2px solid var(--line); border-radius: 12px;
+  padding: 14px 16px; box-shadow: var(--shadow);
+}
+.cost-callouts b {
+  flex: 0 0 auto; display: grid; place-items: center;
+  width: 52px; height: 52px; border-radius: 50%;
+  background: var(--orange); color: #fff; font-size: 1.05rem; letter-spacing: .5px;
+}
+.cost-callouts h3 { margin: 2px 0 5px; font-size: 1.04rem; color: var(--brown); }
+.cost-callouts p { margin: 0; font-size: .94rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+
 /* 施工ギャラリー 4列対応 */
 @media (min-width: 560px) {
   .work-gallery { grid-template-columns: repeat(2, 1fr); }
