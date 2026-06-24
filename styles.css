@@ -1477,6 +1477,17 @@ h2,
 .cost-callouts h3 { margin: 2px 0 5px; font-size: 1.04rem; color: var(--brown); }
 .cost-callouts p { margin: 0; font-size: .94rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
 
+/* ランキングカード 対象エリア表記 */
+.area-note {
+  margin: 8px 0 2px; padding: 9px 11px;
+  background: #fff5dd; border: 1px solid var(--line); border-radius: 8px;
+  font-size: .86rem; font-weight: 600; color: var(--brown); line-height: 1.55;
+}
+.area-note b {
+  display: inline-block; margin-right: 6px; padding: 1px 7px;
+  background: var(--brown); color: #fff; border-radius: 4px; font-size: .8rem;
+}
+
 /* 施工ギャラリー 4列対応 */
 @media (min-width: 560px) {
   .work-gallery { grid-template-columns: repeat(2, 1fr); }
