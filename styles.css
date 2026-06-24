@@ -164,7 +164,7 @@ h2 {
   right: 430px;
   bottom: 20px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 7px;
 }
 
@@ -388,7 +388,7 @@ tbody th { background: #fbf0d7; }
 @media (max-width: 900px) {
   .hero { padding-bottom: 350px; }
   .hero-copy { max-width: 100%; padding-left: 50px; }
-  .merits { left: 10px; right: 10px; bottom: 165px; grid-template-columns: repeat(5, 1fr); }
+  .merits { left: 10px; right: 10px; bottom: 165px; grid-template-columns: repeat(4, 1fr); }
   .hero-cta { left: 10px; right: 10px; bottom: 20px; width: auto; }
 }
 
@@ -400,7 +400,7 @@ tbody th { background: #fbf0d7; }
   .hero-copy { padding-left: 44px; }
   .hero h1 { font-size: clamp(1.92rem, 9vw, 2.65rem); }
   .hero-checks { grid-template-columns: 1fr; gap: 5px; }
-  .merits { bottom: 150px; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+  .merits { bottom: 150px; grid-template-columns: repeat(4, 1fr); gap: 4px; }
   .merits article { min-height: 82px; padding: 5px 2px; }
   .merits b { font-size: 1.35rem; }
   .merits span { font-size: .62rem; line-height: 1.15; }
@@ -906,8 +906,11 @@ h2,
 }
 
 .ranking-text-link {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+  min-height: 60px;
   padding: 11px 14px;
   color: #fff;
   font-weight: 900;
@@ -1479,12 +1482,13 @@ h2,
 
 /* ランキングカード 対象エリア表記 */
 .area-note {
-  margin: 8px 0 2px; padding: 9px 11px;
+  display: flex; align-items: center; gap: 8px;
+  min-height: 66px; margin: 8px 0 2px; padding: 10px 12px;
   background: #fff5dd; border: 1px solid var(--line); border-radius: 8px;
   font-size: .86rem; font-weight: 600; color: var(--brown); line-height: 1.55;
 }
 .area-note b {
-  display: inline-block; margin-right: 6px; padding: 1px 7px;
+  flex: 0 0 auto; align-self: flex-start; padding: 2px 8px;
   background: var(--brown); color: #fff; border-radius: 4px; font-size: .8rem;
 }
 
