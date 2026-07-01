@@ -1513,21 +1513,6 @@ h2,
 .pref-grid a:hover, .pref-grid a:focus-visible {
   background: var(--orange); color: #fff; transform: translateY(-2px);
 }
-.pref-grid a.machikado {
-  background: #ffe8d3; border-color: var(--orange); color: var(--orange-dark);
-}
-.pref-grid a.machikado:hover, .pref-grid a.machikado:focus-visible {
-  background: var(--orange); color: #fff;
-}
-.area-legend {
-  display: flex; flex-wrap: wrap; gap: 8px 18px;
-  margin: 12px 0 4px; font-size: .85rem; font-weight: 700; color: var(--brown);
-}
-.area-legend span { display: inline-flex; align-items: center; gap: 7px; }
-.area-legend i { width: 15px; height: 15px; border-radius: 4px; }
-.area-legend .machikado i { background: #ffe8d3; border: 1px solid var(--orange); }
-.area-legend .other i { background: #fff5dd; border: 1px solid var(--line); }
-
 /* 目次 */
 .toc-list {
   display: grid; gap: 9px; margin: 14px 0 2px; padding: 0;
