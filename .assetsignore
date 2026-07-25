@@ -1,0 +1,4 @@
+# 公開配信から除外（gitには残すが workers.dev では配信しない）
+# 内部情報：出稿KW・除外KW・入札額・チェックリスト
+*.csv
+README_checklist.md
